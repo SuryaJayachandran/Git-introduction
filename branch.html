@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branch Commands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #444;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d63384;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Git Branch Commands</h1>
+        <p>Branches in Git allow you to work on different parts of a project separately. Here are the basic commands to manage branches:</p>
+
+        <h2>1. Create a New Branch</h2>
+        <pre><code>git branch [branch-name]</code></pre>
+        <p>This command creates a new branch. Replace <code>[branch-name]</code> with the name you want for your branch.</p>
+
+        <h2>2. Switch to a Branch</h2>
+        <pre><code>git checkout [branch-name]</code></pre>
+        <p>Switches to the specified branch so you can work on it.</p>
+
+        <h2>3. Create and Switch to a New Branch</h2>
+        <pre><code>git checkout -b [branch-name]</code></pre>
+        <p>Creates a new branch and switches to it in one step.</p>
+
+        <h2>4. List All Branches</h2>
+        <pre><code>git branch</code></pre>
+        <p>Displays all branches in your repository. The current branch is highlighted with an asterisk (<code>*</code>).</p>
+
+        <h2>5. Delete a Local Branch</h2>
+        <pre><code>git branch -d [branch-name]</code></pre>
+        <p>Deletes a branch that has been merged. Use <code>-D</code> to force delete an unmerged branch.</p>
+
+        <h2>6. Delete a Remote Branch</h2>
+        <pre><code>git push origin --delete [branch-name]</code></pre>
+        <p>Deletes a branch from the remote repository.</p>
+
+        <h2>Helpful Tips</h2>
+        <ul>
+            <li>Always name branches descriptively (e.g., <code>feature-login</code>, <code>bugfix-header</code>).</li>
+            <li>Keep your branches up-to-date with <code>git pull</code>.</li>
+            <li>Use <code>git merge</code> to combine branches when your work is done.</li>
+        </ul>
+
+        <p>For more details, visit the <a href="https://git-scm.com/docs/git-branch" target="_blank">official Git documentation</a>.</p>
+    </div>
+</body>
+</html>
