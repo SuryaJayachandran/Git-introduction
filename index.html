@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #444;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #d63384;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction to Git</h1>
+        <p>Git is a distributed version control system that helps developers manage their codebase. Here are some commonly used Git commands:</p>
+
+        <h2>Basic Commands</h2>
+        <ul>
+            <li>
+                <strong>Initialize a repository:</strong>
+                <pre><code>git init</code></pre>
+                <p>Start a new Git repository in the current folder.</p>
+            </li>
+            <li>
+                <strong>Clone a repository:</strong>
+                <pre><code>git clone [repository URL]</code></pre>
+                <p>Copy a remote repository to your local machine.</p>
+            </li>
+            <li>
+                <strong>Check the status of the repository:</strong>
+                <pre><code>git status</code></pre>
+                <p>See the current state of your files and changes.</p>
+            </li>
+            <li>
+                <strong>Add changes to the staging area:</strong>
+                <pre><code>git add [file]</code></pre>
+                <p>Prepare a specific file for the next commit.</p>
+                <pre><code>git add .</code> (Add all files)</pre>
+                <p>Stage all changes in the repository.</p>
+            </li>
+            <li>
+                <strong>Commit changes:</strong>
+                <pre><code>git commit -m "Your commit message"</code></pre>
+                <p>Save your changes with a message describing them.</p>
+            </li>
+            <li>
+                <strong>Push changes to a remote repository:</strong>
+                <pre><code>git push</code></pre>
+                <p>Send your committed changes to a remote server.</p>
+            </li>
+            <li>
+                <strong>Pull changes from a remote repository:</strong>
+                <pre><code>git pull</code></pre>
+                <p>Download and merge changes from a remote repository.</p>
+            </li>
+            <li>
+                <strong>Create a new branch:</strong>
+                <pre><code>git branch [branch-name]</code></pre>
+                <p>Make a new branch to work on separate changes.</p>
+            </li>
+            <li>
+                <strong>Switch to another branch:</strong>
+                <pre><code>git checkout [branch-name]</code></pre>
+                <p>Move to a different branch in your repository.</p>
+            </li>
+            <li>
+                <strong>Merge branches:</strong>
+                <pre><code>git merge [branch-name]</code></pre>
+                <p>Combine changes from one branch into another.</p>
+            </li>
+        </ul>
+
+        <h2>Helpful Tips</h2>
+        <ul>
+            <li>Always write meaningful commit messages.</li>
+            <li>Keep your branches up-to-date by pulling changes regularly.</li>
+            <li>Use <code>git log</code> to view commit history.</li>
+            <li>To undo the last commit (without losing changes): <pre><code>git reset --soft HEAD~1</code></pre></li>
+        </ul>
+
+        <p>For more information, visit the <a href="https://git-scm.com/" target="_blank">official Git documentation</a>.</p>
+    </div>
+</body>
+</html>
